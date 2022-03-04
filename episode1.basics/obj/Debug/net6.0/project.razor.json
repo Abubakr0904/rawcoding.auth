@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/abubakr/rawcoding/rawcoding.auth/episode1.basics/episode1.basics.csproj",
+  "FilePath": "/home/abubakr/rawcoding.auth/episode1.basics/episode1.basics.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,12 +16298,12 @@
   "RootNamespace": "episode1.basics",
   "Documents": [
     {
-      "FilePath": "/home/abubakr/rawcoding/rawcoding.auth/episode1.basics/Views/Home/Index.cshtml",
+      "FilePath": "/home/abubakr/rawcoding.auth/episode1.basics/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/abubakr/rawcoding/rawcoding.auth/episode1.basics/Views/Home/Secret.cshtml",
+      "FilePath": "/home/abubakr/rawcoding.auth/episode1.basics/Views/Home/Secret.cshtml",
       "TargetPath": "Views\\Home\\Secret.cshtml",
       "FileKind": "mvc"
     }

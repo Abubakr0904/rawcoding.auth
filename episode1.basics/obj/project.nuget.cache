@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "teg1LoFvFupFgFa08Vw5rkxjTf2kjGVachB9lALYdDtrx8kS81MzviEWtFrPnwgqP9qzHkjdA3JZC+u5Y29yvQ==",
+  "dgSpecHash": "tNIMXZg+CgjkXM6C0+xAQ5++2+XVavRs6Q+2ap8MzQSrrJq7SBvD0B/dNoAwgDm85sAGwlcbU5JXDZulmX6eAA==",
   "success": true,
-  "projectFilePath": "/home/abubakr/rawcoding/rawcoding.auth/episode1.basics/episode1.basics.csproj",
+  "projectFilePath": "/home/abubakr/rawcoding.auth/episode1.basics/episode1.basics.csproj",
   "expectedPackageFiles": [
     "/home/abubakr/.nuget/packages/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "/home/abubakr/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
