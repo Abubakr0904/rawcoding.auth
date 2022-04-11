@@ -1674,11 +1674,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/abubakr/rawcoding/rawcoding.auth/episode1.basics/episode1.basics.csproj",
+      "projectUniqueName": "/home/abubakr/rawcoding.auth/episode1.basics/episode1.basics.csproj",
       "projectName": "episode1.basics",
-      "projectPath": "/home/abubakr/rawcoding/rawcoding.auth/episode1.basics/episode1.basics.csproj",
+      "projectPath": "/home/abubakr/rawcoding.auth/episode1.basics/episode1.basics.csproj",
       "packagesPath": "/home/abubakr/.nuget/packages/",
-      "outputPath": "/home/abubakr/rawcoding/rawcoding.auth/episode1.basics/obj/",
+      "outputPath": "/home/abubakr/rawcoding.auth/episode1.basics/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/abubakr/.nuget/NuGet/NuGet.Config"
@@ -1736,7 +1736,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
       }
     }
   }

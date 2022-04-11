@@ -1,4 +1,5 @@
 using System.Security.Claims;
+using episode1.basics.CustomAuthorizationProvider;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -19,6 +20,31 @@ public class HomeController : Controller
         return View();
     }
 
+    [Authorize(Policy = "Claim.DoB")]
+    public IActionResult SecretPolicy()
+    {
+        return View("Secret");
+    }
+
+    [Authorize(Roles = "Admin")]
+    public IActionResult SecretRole()
+    {
+        return View("Secret");
+    }
+
+    [SecurityLevel(5)]
+    public IActionResult SecretLevel()
+    {
+        return View("Secret");
+    }
+
+    [SecurityLevel(10)]
+    public IActionResult SecretHigherLevel()
+    {
+        return View("Secret");
+    }
+
+    [AllowAnonymous]
     public IActionResult Authenticate()
     {
         // o'qituvchining userPrincipal haqida bildirgan da'volaridan(claim) tashkil topgan list
@@ -26,6 +52,9 @@ public class HomeController : Controller
         {
             new Claim(ClaimTypes.Name, "Abubakr"),
             new Claim(ClaimTypes.Email, "abubakr@gmail.com"),
+            new Claim(ClaimTypes.DateOfBirth, "09/04/2001"),
+            new Claim(ClaimTypes.Role, "Admin"),
+            new Claim(DynamicPolicies.SecurityLevel, "7"),
             new Claim("Qobiliyatlari", "Yaxshi o'qiydi."),
         };
 
@@ -53,5 +82,22 @@ public class HomeController : Controller
         // _signInManager.SignInAsync(_userManager.GetUserAsync(userPrincipal).GetAwaiter().GetResult(), false);
         HttpContext.SignInAsync(userPrincipal);
         return RedirectToAction("Index");
+    }
+
+    public async Task<IActionResult> DoStuff(
+        [FromServices]IAuthorizationService _authorizationService)
+    {
+        //we are doing stuff here
+
+        var builder = new AuthorizationPolicyBuilder("Schema");
+        var customPolicy = builder.RequireClaim("Hello").Build();
+
+        var authResult =  await _authorizationService.AuthorizeAsync(HttpContext.User, customPolicy);
+
+        if(authResult.Succeeded)
+        {
+            return View("Index");
+        }
+        return View("Index");
     }
 }
